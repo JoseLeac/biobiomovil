@@ -66,10 +66,10 @@ export default function App() {
       <StatusBar style="dark" />
       <View style={styles.app}>
         <View style={styles.topBar}>
-          <View style={styles.brandMark}><Text style={styles.brandMarkText}>B</Text></View>
+          <View style={styles.brandMark}><Text style={styles.brandMarkText}>C</Text></View>
           <View>
-            <Text style={styles.brand}>Bio-Bio <Text style={styles.brandAccent}>Móvil</Text></Text>
-            <Text style={styles.eyebrow}>GRAN CONCEPCIÓN · MOVILIDAD CONSCIENTE</Text>
+            <Text style={styles.brand}>Conce <Text style={styles.brandAccent}>Móvil</Text></Text>
+            <Text style={styles.eyebrow}>CONCEPCIÓN · MOVILIDAD CONSCIENTE</Text>
           </View>
           <View style={styles.signal}><View style={styles.signalDot} /><Text style={styles.signalText}>En vivo</Text></View>
         </View>
@@ -92,7 +92,7 @@ function PlanScreen({ origin, destination, setOrigin, setDestination, onRoute }:
       <View style={styles.hero}>
         <View style={styles.heroCopy}>
           <Text style={styles.kicker}>HOLA, VIAJERO</Text>
-          <Text style={styles.heroTitle}>Muévete mejor{'\n'}por el Gran Concepción.</Text>
+          <Text style={styles.heroTitle}>Muévete mejor{'\n'}por Concepción.</Text>
           <Text style={styles.heroText}>Planifica un viaje que le haga bien a tu tiempo y a tu ciudad.</Text>
         </View>
         <View style={styles.heroOrb}><Text style={styles.heroOrbText}>↗</Text><Text style={styles.heroOrbCaption}>menos huella{'\n'}más ciudad</Text></View>

@@ -1,6 +1,6 @@
-# Bio-Bio Móvil
+# Conce Móvil
 
-Prototipo visual de una app móvil para planificar viajes sostenibles en el Gran Concepción. Es una demo local: no incluye backend, autenticación ni APIs reales.
+Prototipo visual de una app móvil para planificar viajes sostenibles en Concepción. Es una demo local: no incluye backend, autenticación ni APIs reales.
 
 ## Ejecutar
 

@@ -9,6 +9,7 @@ export type RouteOption = {
   distance: string;
   cost: string;
   impact?: string;
+  notice?: string;
   accent: string;
 };
 
@@ -42,10 +43,11 @@ export const routeOptions: RouteOption[] = [
     mode: 'transit',
     title: 'Bus + Biotren',
     subtitle: 'Biobus hacia Estación Concepción',
-    duration: '32 min',
+    duration: '36 min',
     distance: '8,4 km',
     cost: '$680',
-    impact: 'Menor impacto',
+    impact: 'Recomendada',
+    notice: 'Línea 20 con desvío · +4 min',
     accent: '#5DE1B5',
   },
   {
@@ -56,6 +58,7 @@ export const routeOptions: RouteOption[] = [
     duration: '24 min',
     distance: '6,1 km',
     cost: '$0 · 30 min incluidos',
+    impact: 'Menor impacto',
     accent: '#F5C76A',
   },
   {
@@ -71,11 +74,11 @@ export const routeOptions: RouteOption[] = [
 ];
 
 export const routeSteps = [
-  { time: '08:12', title: 'Camina hasta Plaza Independencia', detail: '350 m · 4 min', icon: '↗' },
-  { time: '08:16', title: 'Toma el bus hacia Concepción', detail: 'Línea 20 · Parada Catedral', icon: '▣' },
-  { time: '08:27', title: 'Baja en Estación Concepción', detail: '8 min · conexión Biotren', icon: '⌁' },
-  { time: '08:31', title: 'Aborda Biotren hacia Chiguayante', detail: 'Andén 2 · 1 parada', icon: '▣' },
-  { time: '08:44', title: 'Llegas a Universidad de Concepción', detail: 'Camina 350 m · 4 min', icon: '✦' },
+  { time: '08:12', title: 'Camina hasta Plaza Independencia', detail: '350 m · 4 min' },
+  { time: '08:16', title: 'Toma el bus hacia Concepción', detail: 'Línea 20 · Parada Catedral' },
+  { time: '08:27', title: 'Baja en Estación Concepción', detail: '8 min · conexión Biotren' },
+  { time: '08:31', title: 'Aborda Biotren hacia Chiguayante', detail: 'Andén 2 · 1 parada' },
+  { time: '08:44', title: 'Llegas a Universidad de Concepción', detail: 'Camina 350 m · 4 min' },
 ];
 
 export const alerts: AlertItem[] = [

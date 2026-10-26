@@ -75,7 +75,7 @@ export const routeOptions: RouteOption[] = [
 
 export const routeSteps = [
   { time: '08:12', title: 'Camina hasta Plaza Independencia', detail: '350 m · 4 min' },
-  { time: '08:16', title: 'Toma el bus hacia Concepción', detail: 'Línea 20 · Parada Catedral' },
+  { time: '08:18', title: 'Toma el bus hacia Concepción', detail: 'Línea 20 · Parada Catedral' },
   { time: '08:27', title: 'Baja en Estación Concepción', detail: '8 min · conexión Biotren' },
   { time: '08:31', title: 'Aborda Biotren hacia Chiguayante', detail: 'Andén 2 · 1 parada' },
   { time: '08:44', title: 'Llegas a Universidad de Concepción', detail: 'Camina 350 m · 4 min' },

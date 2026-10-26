@@ -53,7 +53,8 @@ El nombre oficial es “Conce Móvil”; no usar “Bio-Bio Móvil”.
   disponibilidad de 8 bicicletas, 12 espacios libres, 30 minutos incluidos y
   ciclovía Avenida Los Carrera.
 - Cifras del panel: 12.480 usuarios activos, 1.860 consultas diarias, 842,6 kg de
-  CO₂ evitado, porcentajes de variación, rutas consultadas e incidencias.
+  CO₂ evitado, 5 incidencias abiertas (3 en revisión y 2 resueltas), porcentajes de
+  variación y rutas consultadas.
 - Factores referenciales de CO₂ (`0,12` transporte público, `0,21` bicicleta y
   caminata), distancias y equivalencia aproximada de un árbol.
 - Fuente mostrada para horarios: “Operador de Transporte Público del Gran

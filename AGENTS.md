@@ -12,10 +12,12 @@ El nombre oficial es “Conce Móvil”; no usar “Bio-Bio Móvil”.
 - `App.tsx` concentra la navegación por estado, las pantallas y los estilos compartidos.
 - La barra inferior móvil tiene tres pestañas:
   - **Planificar**: buscador y opciones de ruta. Tocar una tarjeta abre el detalle de
-    ruta; tocar “Bicicleta pública” abre su detalle.
+    ruta; tocar “Bicicleta pública” abre su detalle y “Caminata” abre un detalle
+    propio del recorrido a pie.
   - **Alertas**: desvío de líneas 20 y 21, suspensión de Biotren Línea 2 y demora de
     buses. Tocar el desvío abre la ruta afectada.
-  - **Mis viajes**: registro de viajes y CO₂ evitado.
+  - **Mis viajes**: registro de viajes y CO₂ evitado. “Registrar un viaje” abre un
+    formulario local con origen, destino y modo, y actualiza la lista y el total.
 - La cuarta superficie base es el **detalle de ruta**, accesible desde Planificar;
   desde el aviso de Línea 20 se puede abrir el detalle de la línea y sus horarios.
 - El **panel municipal** se abre mediante “Panel” en el encabezado, no desde la barra
@@ -57,6 +59,15 @@ El nombre oficial es “Conce Móvil”; no usar “Bio-Bio Móvil”.
   variación y rutas consultadas.
 - Factores referenciales de CO₂ (`0,12` transporte público, `0,21` bicicleta y
   caminata), distancias y equivalencia aproximada de un árbol.
+- Lugares seleccionables: Plaza Independencia, UdeC, Collao, Barrio Universitario
+  y Centro de Concepción. Los resultados para pares distintos de Plaza
+  Independencia → UdeC son explícitamente datos de ejemplo.
+- Detalle de caminata: 5,6 km, 1 h 18 min y 1,18 kg de CO₂ evitados.
+- Viajes registrados desde el formulario: distancias demo de 8,4 km (transporte
+  público), 4,2 km (bicicleta) y 5,6 km (caminata), calculadas con los factores
+  referenciales.
+- Confirmación de exportación del panel: aviso local “La exportación es una
+  demostración”; no se genera un archivo real.
 - Fuente mostrada para horarios: “Operador de Transporte Público del Gran
   Concepción”; confirmar nombre y disponibilidad de la fuente.
 
@@ -64,10 +75,10 @@ El nombre oficial es “Conce Móvil”; no usar “Bio-Bio Móvil”.
 
 | Funcionalidad | Dónde se ve | Estado / falta |
 | --- | --- | --- |
-| Planificación de rutas | Planificar, tarjetas y detalle de ruta | Demo completa con origen/destino fijos editables; falta motor o API real. |
+| Planificación de rutas | Planificar, tarjetas y detalle de ruta | Demo con selectores de lugares predefinidos; los pares sin cobertura muestran resultados de ejemplo. Falta motor o API real. |
 | Integración de información | Alertas, detalle de Línea 20 y estados de estaciones | Demo coherente entre pantallas; falta integración con operador y datos en tiempo real. |
 | Alertas | Pestaña Alertas y ruta afectada | Incluye desvío, suspensión y demora; falta notificación push, mapa real y actualización automática. |
-| Registro de viajes sostenibles | Pestaña Mis viajes | Registro simulado y CO₂ agregado; falta persistencia, alta/edición real y cuenta de usuario. |
+| Registro de viajes sostenibles | Pestaña Mis viajes | Alta local simulada, CO₂ agregado y formulario de origen/destino/modo; falta persistencia, edición real y cuenta de usuario. |
 | Panel municipal | Vista Panel | Indicadores, filtros visuales, ranking, incidencias y tendencia de ejemplo; faltan backend, permisos, exportación y filtros funcionales. |
 
 ## Ejecutar y verificar

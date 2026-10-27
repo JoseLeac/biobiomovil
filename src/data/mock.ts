@@ -32,9 +32,17 @@ export type Trip = {
   co2: number;
 };
 
+export const places = [
+  'Plaza Independencia',
+  'UdeC',
+  'Collao',
+  'Barrio Universitario',
+  'Centro de Concepción',
+] as const;
+
 export const searchDefaults = {
   origin: 'Plaza Independencia',
-  destination: 'Universidad de Concepción',
+  destination: 'UdeC',
 };
 
 export const routeOptions: RouteOption[] = [
@@ -76,9 +84,9 @@ export const routeOptions: RouteOption[] = [
 export const routeSteps = [
   { time: '08:12', title: 'Camina hasta Plaza Independencia', detail: '350 m · 4 min' },
   { time: '08:18', title: 'Toma el bus hacia Concepción', detail: 'Línea 20 · Parada Catedral' },
-  { time: '08:27', title: 'Baja en Estación Concepción', detail: '8 min · conexión Biotren' },
-  { time: '08:31', title: 'Aborda Biotren hacia Chiguayante', detail: 'Andén 2 · 1 parada' },
-  { time: '08:44', title: 'Llegas a Universidad de Concepción', detail: 'Camina 350 m · 4 min' },
+  { time: '08:31', title: 'Baja en Estación Concepción', detail: '8 min · espera 4 min para conexión' },
+  { time: '08:35', title: 'Aborda Biotren hacia Chiguayante', detail: 'Andén 2 · 1 parada' },
+  { time: '08:48', title: 'Llegas a Universidad de Concepción', detail: 'Camina 350 m · 4 min' },
 ];
 
 export const alerts: AlertItem[] = [
